@@ -3,5 +3,8 @@
 <h1>Welcome</h1>
 
 <h2><a href="/task/new">Add a Task</a></h2>
+<% tasks.each do |task| %>
+    <li><%= task %></li>
+<% end %>
 </body>
 </html>
