@@ -9,5 +9,7 @@ feature 'Manage Homepage' do
     visit '/'
     expect(page).to have_content 'Welcome'
     click_link 'Add a Task'
+    fill_in 'new_task', :with => 'Cook Dinner'
+    click_on 'Create Task'
   end
 end

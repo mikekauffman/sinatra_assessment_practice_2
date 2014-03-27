@@ -6,4 +6,8 @@ class App < Sinatra::Base
     erb :homepage
   end
 
+  get '/task/new' do
+    erb :new_task
+  end
+
 end
