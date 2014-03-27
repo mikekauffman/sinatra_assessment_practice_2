@@ -8,5 +8,6 @@ feature 'Manage Homepage' do
   scenario 'Welcome displays on the homepage' do
     visit '/'
     expect(page).to have_content 'Welcome'
+    click_link 'Add a Task'
   end
 end
